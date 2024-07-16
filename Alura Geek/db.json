@@ -1,0 +1,8 @@
+{
+    "produtos": [
+      { "id": 1, "nome": "Mouse Gamer", "preco": 99.99, "imagem": "https://exemplo.com/mouse.jpg" },
+      { "id": 2, "nome": "Teclado Mecânico", "preco": 199.99, "imagem": "https://exemplo.com/teclado.jpg" },
+      { "id": 3, "nome": "Monitor Gamer", "preco": 799.99, "imagem": "https://exemplo.com/monitor.jpg" }
+    ]
+  }
+  

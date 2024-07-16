@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+</style>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Alura Geek Logo">
+    </header>
+
+    <main>
+        <div class="products-section">
+            <h1>Meus Produtos:</h1>
+            <div class="products">
+                <div class="card">
+                    <img src="./images/produto.png" alt="Imagem do produto">
+                    <div class="card-container--info">
+                        <p>Stormtrooper</p>
+                        <div class="card-container--value">
+                            <p>$ 60,00</p>
+                            <img src="./images/excluir.png" alt="Ícone de exclusão">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/produto.png" alt="Imagem do produto">
+                    <div class="card-container--info">
+                        <p>Stormtrooper</p>
+                        <div class="card-container--value">
+                            <p>$ 60,00</p>
+                            <img src="./images/excluir.png" alt="Ícone de exclusão">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./images/produto.png" alt="Imagem do produto">
+                    <div class="card-container--info">
+                        <p>Stormtrooper</p>
+                        <div class="card-container--value">
+                            <p>$ 60,00</p>
+                            <img src="./images/excluir.png" alt="Ícone de exclusão">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Adicionar Produto:</h2>
+            <form id="form-novo-produto" onsubmit="return validarFormulario()">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" name="valor" required>
+                
+                <label for="imagem">Imagem:</label>
+                <input type="text" id="imagem" name="imagem" required>
+                
+                <button type="submit">Guardar</button>
+                <button type="button" onclick="limparFormulario()">Limpar</button>
+            </form>
+        </div>
+    </main>
+    
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/apiRequests.js"></script>
+    <script type="module" src="./js/listarProdutos.js"></script>
+    <script src="js/adicionarProduto.js"></script>
+    <script src="js/listarProdutos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          buscarProdutos();
+        });
+      </script>
+</body>
+
+<footer>
+    <img src="./images/logo.png" alt="Logotipo">
+    <p>Desenvolvido por Stephanie Fagundes</p>
+    <p>2024 Meu E-commerce</p>
+</footer>
+</html>
